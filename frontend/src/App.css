@@ -18,3 +18,7 @@ li {
     text-align: center;
     font-size: x-large;
 }
+conteiner-init {
+    grid-column: auto;
+
+}
