@@ -2,11 +2,23 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const path = require('path');
+const mongoose = require('mongoose');
 
 const app = express();
 const port = process.env.PORT || 5000;
-app.use(cors());
 
+mongoose.connect('mongodb+srv://admin:admin@crud.qyjkidv.mongodb.net/?retryWrites=true&w=majority',{
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+},function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log('Connected to database');
+    }
+})
+
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 
