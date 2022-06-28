@@ -6,14 +6,14 @@ module.exports = {
     return res.json(user);
   },
   async create(req, res) {
-    const { nome, email, senha, tipo_usuario } = req.body;
+    const { nome, email, senha } = req.body;
 
     let data = {};
 
     let user = Usuario.findOne({ email: email });
 
     if (user) {
-      data = { nome, email, senha, tipo_usuario };
+      data = { nome, email, senha };
       user = await Usuario.create(data);
       return res.status(200).json(user);
     } else {

@@ -7,8 +7,8 @@ const Pessoa = require('../src/controllers/pessoa.controller');
 
 
 //Rotas de Usuarios
-routes.post('/api/usuarios', Usuario.create); //Cria um novo usuário
-routes.get('/api/usuarios.create', Usuario.index); //Lista todos os usuários
+routes.post('/api/usuarios.create', Usuario.create); //Cria um novo usuário
+routes.get('/api/usuarios', Usuario.index); //Lista todos os usuários
 routes.get('/api/usuarios.details/:_id',Usuario.details); //Lista um usuário específico
 routes.delete('/api/usuarios.delete/:_id', Usuario.delete); //Deleta um usuário
 routes.put('/api/usuarios.update', Usuario.update); //Atualiza um usuário

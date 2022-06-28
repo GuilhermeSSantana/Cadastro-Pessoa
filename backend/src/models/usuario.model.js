@@ -5,7 +5,6 @@ const DataSchema = new mongoose.Schema({
     nome: String,   // nome do usuário 
     email: String,  // email do usuário
     senha: String,  // senha do usuário
-    tipo_usuario: {type: Number, default:1}, // tipo de usuário
 },{
     timestamps: true    // cria os campos created_at e updated_at
 });
