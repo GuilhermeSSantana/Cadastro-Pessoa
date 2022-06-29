@@ -52,7 +52,7 @@ export default function Cadastro() {
   return (
     <div className="container-cadastro">
       <div className="container-cadatro-form">
-        <h1>Cadastrar</h1>
+      <h1> <center>Cadastrar</center></h1><br/>
         <input type="text" placeholder="Nome" onChange={(e) => setnome(e.target.value)} value={nome} />
         <br />
         <input type="text" placeholder="Sobrenome" onChange={(e) => setapelido(e.target.value)} value={apelido}/>
@@ -67,25 +67,26 @@ export default function Cadastro() {
       </div>
 
       <div className="container-todolist">
-        <br />
+        <h1> <center>Todos os cadastros</center></h1><br/>
         {list.length > 0 &&
           list.map((item) => (
             <>
               <div className="list-name">
-                  {item.nome} <br />
-                  {item.apelido} <br />
-                  {item.telefone} <br />
-                  {item.email}  <br />
-                  {item.endereco} <br />
+                 <form>
 
+                  Nome:{item.nome} {item.apelido}<br/>
+                  Telefone: {item.telefone}<br/>Email: {item.email}<br/>
+                  Endereço: {item.endereco}<br/>
+                 </form>
+                
                 <button
-                  className="login-cadatro-btn"
+                  className="delete-btn"
                   onClick={() => deleteData(item._id)}
                 >
                   🗑️
                 </button>
                 <button
-                  className="login-cadatro-btn"
+                  className="update-btn"
                   onClick={() => updateData(item)}
                 >
                   ✏️

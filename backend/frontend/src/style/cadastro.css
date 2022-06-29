@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #77a9e7;
+}
+
+.container-cadastro {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+    background-color: #77a9e7;
+}
+
+.container-cadatro-form {
+  width: 45%;
+  top: 15%;
+  left: -5%;
+  margin-right: 50%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-cadatro-form input {
+  width: 50%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 5px 50px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+}
+.container-cadatro-form button {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {
+  background-color: #3e8e41;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.container-todolist {
+  width: 50%;
+  top: 15%;
+  margin-left: 7%;
+  left: 25%;
+  margin-right: 50%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.list-name {
+    border-radius: 1px;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+   grid-column-gap: 7px;
+   grid-row-gap:6px;
+}
+
+
+.delete-btn{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 1px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    box-shadow: 0 3px #999;
+}
+.delete-btn:hover {
+  background-color: black;
+}
+.update-btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    box-shadow: 0 3px #999;
+}
