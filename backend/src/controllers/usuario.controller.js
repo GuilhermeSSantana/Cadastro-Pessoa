@@ -46,8 +46,15 @@ module.exports = {
         console.log(err);
         res.status(200).json({erro: "Erro ao logar, tente novamente"});
       }else if(!user){
-        res.status(200).json({statu:2,erro: "Email não confere"});
+        res.status(201).json({statu:2, erro: "Email não confere"});
       }else{
+        user.isCorrectPassword(senha, function(err, same){
+          if(err){
+            console.log(err);
+            res.status(200).json({erro: "Erro ao logar, tente novamente"});
+          }else if(!same){
+            res.status(201).json({statu:2,erro: "Senha não confere"});
+          }else{
         const payload = {email};
         const token = jwt.sign(payload, secret, {
           expiresIn: "2h"
@@ -57,5 +64,7 @@ module.exports = {
       }
       }
     );
+    }
+    });
   }
 };

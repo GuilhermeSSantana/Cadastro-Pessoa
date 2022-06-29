@@ -71,14 +71,13 @@ export default function Cadastro() {
         {list.length > 0 &&
           list.map((item) => (
             <>
-              <div>
-                <li>
-                  {item.nome}
-                  {item.apelido}
-                  {item.telefone}
-                  {item.email}
-                  {item.endereco}
-                </li>
+              <div className="list-name">
+                  {item.nome} <br />
+                  {item.apelido} <br />
+                  {item.telefone} <br />
+                  {item.email}  <br />
+                  {item.endereco} <br />
+
                 <button
                   className="login-cadatro-btn"
                   onClick={() => deleteData(item._id)}

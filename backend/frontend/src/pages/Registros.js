@@ -22,8 +22,9 @@ const navigate = useNavigate();
     <div className="container-login">
       <div className="wrap-login"></div>
       <form className="login-form">
+      <h1> <center>Registre-se</center></h1><br/>
         <div className="wrap-input">
-          <input className="input" type="text" placeholder="Usuário" onChange={(e) => setnome(e.target.value)} value={nome} />
+          <input className="input" type="text" placeholder="Nome" onChange={(e) => setnome(e.target.value)} value={nome} />
           <span className="focus-input"></span>
         </div>
 
