@@ -20,4 +20,8 @@ routes.get('/api/pessoas.details/:_id', Pessoa.details); //Detalhar uma pessoa
 routes.delete('/api/pessoas.delete/:_id', Pessoa.delete); //Deletar uma pessoa
 routes.put('/api/pessoas.update', Pessoa.update); //Atualizar uma pessoa
 
+//Rotas de Login
+routes.post('/api/usuarios/login', Usuario.login); //Login de um usuário
+
+
 module.exports = routes;

@@ -73,15 +73,11 @@ export default function Cadastro() {
             <>
               <div>
                 <li>
-                  name: {item.nome}
-                  <br />
-                  Apelido: {item.apelido}
-                  <br />
-                  Telefone: {item.telefone}
-                  <br />
-                  Email: {item.email} <br />
-                  Endereço: {item.endereco}
-                  <br />
+                  {item.nome}
+                  {item.apelido}
+                  {item.telefone}
+                  {item.email}
+                  {item.endereco}
                 </li>
                 <button
                   className="login-cadatro-btn"
