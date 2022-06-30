@@ -12,3 +12,6 @@ Cadastro de informações de pessoas.
 
 
 <h1>Projeto para fiz de aprendizagem e teste de conhecimento</h1>
+
+
+<h3>Para poder roda o projeto coloque o seguinte comando 'NPM RUN DEV' na raiz backend</h3>
